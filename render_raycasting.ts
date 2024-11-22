@@ -613,8 +613,18 @@ namespace Render {
                     lastMapX = mapX
                     lastMapY = mapY
                 }
-                //fix start&end points to avoid regmatic between lines
-                this.tempScreen.blitRow(x, drawStart, tex, texX, drawHeight)
+
+                if (drawHeight < 10) {
+                
+                } else if (drawHeight < 20) {
+                    this.tempScreen.drawLine(x, drawStart, x, drawStart + drawHeight, 10);
+                } else if (drawHeight < 30) {
+                    this.tempScreen.drawLine(x, drawStart, x, drawStart + drawHeight, 11);
+                }
+                else {
+                    this.tempScreen.blitRow(x, drawStart, tex, texX, drawHeight);
+                }
+
 
                 this.dist[x] = perpWallDist
             }
