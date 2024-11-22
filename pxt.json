@@ -1,5 +1,5 @@
 {
-    "name": "pxt-raycasting",
+    "name": "makecode raycasting3d",
     "version": "0.3.19",
     "description": "",
     "dependencies": {
@@ -42,7 +42,7 @@
         "images.g.ts"
     ],
     "targetVersions": {
-        "target": "1.12.53",
+        "target": "1.12.57",
         "pxt": "8.5.63",
         "targetId": "arcade"
     },
